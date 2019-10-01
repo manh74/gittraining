@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		var cars = ["1.jpg","2.jpg","3.jpg"];
+		var position = 0;
+        setInterval(function(){ 
+				position++;
+				document.getElementById('myImg').src = cars[position];
+				if(position==3){
+					position=0
+				} }, 3000);
+	</script>
+</head>
+<body>
+	<div>
+		<img id="myImg" src="2.jpg">
+	</div>
+</body>
+</html>
